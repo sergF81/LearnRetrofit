@@ -42,7 +42,9 @@ private TextView textViewReult;
 
            for( UserGitHub gitHub : ugit ){
                String content = "";
-               content += "User : " + gitHub.getName() + "\n";
+               content += "Repos : " + gitHub.getName() + "\n";
+               content += "id : "+ gitHub.getIdRepos() + "\n";
+               content += "html_url : " + gitHub.getHtml_url() + "\n\n";
                textViewReult.append(content);
             }
         }
